@@ -1,0 +1,340 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dekko&family=Salsa&display=swap" rel="stylesheet">
+    <!-- ikonice -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <link rel="icon" href="media/ikonica.jpeg" type="x-icon">
+
+    <title>Moj Bootstrap projekat</title>
+
+    <style>
+      h1{
+        font-family:Salsa; 
+        text-align: center;
+        font-size: 70px;
+      }
+      h2{
+        text-align: center;
+      }
+      body{
+        margin: 5px;
+        background-color: rgb(165, 206, 245); 
+      }
+      header{
+        background-image: url(media/paws.jpg);
+        background-image: url(media/pozadina.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 50px;
+        margin-bottom: 30px;
+      }
+      nav {
+        padding-bottom: 10px;
+        padding-top: 10px;
+        background-color: rgb(139, 193, 243);
+        border-bottom: solid royalblue 1px;
+        font-family: Salsa; 
+        font-size: 25px;
+      }
+      #navbar a{
+        color: rgb(28, 82, 243);
+        border: royalblue 1px solid;
+        padding: 15px;
+        margin: 5px;
+      }
+      .Kontejner{
+        color: darkblue;
+        font-family: Dekko;
+        font-size: 25px;
+        width: 80%;
+        margin: auto;
+      }
+      .carousel-item img {
+        margin: auto;
+      }
+      footer{
+        background-color: rgb(139, 193, 243);
+        margin-bottom: -16px;
+        padding: 15px;
+        font-family: Dekko;
+        font-size: 20px;
+        color:rgb(28, 82, 243); 
+      }
+      footer p {
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function() {
+        $('#carouselExampleAutoplaying').carousel();
+      });
+    </script>
+    <script>
+      $(document).ready(function() {
+        $('#carouselExampleAutoplaying').carousel();
+        // Handle form submission
+        $('#ocenjivanjeForm').on('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting in the traditional way
+          // Clear the form fields
+          $('#ime').val('');
+          $('#prezime').val('');
+          $('#ocena').val('1');
+          $('#komentar').val('');
+        });
+      });
+    </script>
+
+
+    <nav class="nav nav-pills flex-column flex-sm-row" id="navbar">
+      <a class="flex-sm-fill text-sm-center nav-link" aria-current="page" href="#"><i class="bi bi-house-fill"></i>  Početna</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#Biografija"><i class="bi bi-info-circle-fill"></i>  Biografija</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#Hobi"><i class="bi bi-controller"></i>  Hobi</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#Galerija"><i class="bi bi-camera-fill"></i>  Galerija slika</a>
+      <a class="flex-sm-fill text-sm-center nav-link" href="#Kontakt"><i class="bi bi-telephone-fill"></i>  Kontakt</a>
+    </nav>
+
+    <header>
+        <h1><i class="bi bi-suit-heart-fill"></i> Moj <i class="bi bi-suit-heart-fill"></i><br> Bootstrap projekat</h1>
+    </header>
+    
+    <div class="Kontejner">
+      
+      <div id="Biografija" class="mb-4 mt-4">
+      <h2><b>Šta treba da znate o meni?</b></h2>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <img src="media/ja.jpg" class="card-img-top" alt="aquarius">
+                <div class="card-body">
+                  <p class="card-text">Zovem se Tamara i imam 20godina. Rođena sam 26.Januara 2004.godine </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <img src="media/maza.jpg" class="card-img-top" alt="aquarius" >
+                <div class="card-body">
+                  <p class="card-text">Moj kućni ljubimac je mačka. Zove se Maza i ima 6 godina. Voli da leži na leđima i da se mazi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <div class="embed-responsive embed-responsive-1by1">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d45138.553871847966!2d20.132751370952526!3d45.00138043475672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a584413360907%3A0x1d34abfd6e072d9d!2z0KHRgtCw0YDQsCDQn9Cw0LfQvtCy0LA!5e0!3m2!1ssr!2srs!4v1716397070284!5m2!1ssr!2srs" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="card-body">
+                  <p class="card-text">Dolazim iz Stare Pazove. Stara Pazova je mali grad u Sremu, na sredini puta između Novog Sada i Beograda </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <img src="media/cmelik.jpg" class="card-img-top" alt="aquarius">
+                <div class="card-body">
+                  <p class="card-text">Osnovna škola: Osnovna Škola "Heroj Janko Čmelik" u Staroj Pazovi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <img src="media/vuk.jpg" class="card-img-top" alt="aquarius">
+                <div class="card-body">
+                  <p class="card-text">Srednja škola: Ekonomsko-trgovinska škola "Vuk Karadžić" u Staroj Pazovi</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm">
+              <div class="card" style="width: 18rem; padding: 5px;">
+                <img src="media/vps.jpg" class="card-img-top" alt="aquarius">
+                <div class="card-body">
+                  <p class="card-text">Viša škola: Visoka poslovna škola strukovnih studija u Novom Sadu</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+
+      
+      <div id="Hobi" class="ml-5 mr-5">
+        <h2><b>Kako provodim svoje slobodno vreme</b></h2>
+        <p style="text-indent: 30px;">Najviše svog slobodnog vremena volim da posvetim porodici i prijateljima, kao i svojoj mački. Takođe volim da igram igrice sa svojim prijateljima koji žive u dalekim državama i tako se družim sa njima. Još jedna stvar o meni je da uvek slušam muziku - bilo na glas ili preko slušalica. Ostale stvari su sklapanje puzli, čitanje knjiga, gledanje serija i filmova, fotografisanje i pravljenje web sajtova (Za dokaz pogledajte moj GitHub profil - link se nalazi u footeru)<i class="bi bi-emoji-wink-fill"> </i></p>
+      </div>
+
+      
+      <div id="Galerija">
+        <h2><b>Galerija slika moje mačke</b></h2>
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active " data-interval="2800">
+              <img src="media/maza1.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza2.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza3.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza4.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza5.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza6.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza7.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza8.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza9.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza10.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza11.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza12.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza13.jpeg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+            <div class="carousel-item" data-interval="2800">
+              <img src="media/maza14.jpg" class="d-block" alt="maza" style="height: 80vh; width: auto;">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </button>
+        </div>
+      </div>
+
+
+      <div id="Ocenjivanje">
+        <h2 style="margin-top: 30px;"><b>Ocenite moj sajt ako vam se svideo</b></h2>
+        <form class="mb-3 mr-5 ml-5 mt-4 pl-5 pr-5" id="ocenjivanjeForm">
+          <div class="row">
+            <div class="col-md-4">
+              <label for="ime">Ime</label>
+              <input type="text" class="form-control" id="ime">
+            </div>
+            <div class="col-md-4">
+              <label for="prezime">Prezime</label>
+              <input type="text" class="form-control" id="prezime">
+            </div>
+            <div class="col-md-4">
+              <label for="ocena">Ocena:</label>
+              <select class="form-control" id="ocena">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col">
+              <label for="komentar">Komentar</label>
+              <textarea class="form-control" id="komentar" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col mt-3 d-flex justify-content-end">
+              <button type="submit" class="btn btn-primary">Pošalji</button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="text-center">
+        <div class="row align-items-start">
+          <div class="col">
+            <ul class="nav flex-column">
+              <p>Linkovi:</p>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pocetna</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Biografija">Biografija</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Hobi">Hobi</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Galerija">Galerija slika</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Kontakt">Kontakt</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col" id="Kontakt">
+            <p>Nađite me na društvenim mrežama!</p>
+            <ul class="nav flex-column">
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.linkedin.com/in/tamara-%C4%91ur%C4%8Dik-aa763423b/"><i class="bi bi-linkedin"></i>Linked-in</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://github.com/djurcikT"><i class="bi bi-github"></i>GitHub</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.instagram.com/djurcik.t/"><i class="bi bi-instagram"></i>Instagram</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.facebook.com/tamara.djurcik"><i class="bi bi-facebook"></i>Facebook</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://www.pinterest.com/djurcik_t/"><i class="bi bi-pinterest"></i>Pinterest</a>
+              </li>
+            </ul>
+          </div>
+          <div class="col">
+            <p>Možete me kontaktirati i putem telefona...</p>
+            <a href="tel:+381638133634">062/896-1699</a>
+            <br><br>
+            <p>... ili mi pošaljite mail na:</p>
+            <a href="mailto:tamaradjurcik@gmail.com">tamaradjurcik@gmail.com</a>
+          </div>
+        </div>
+        <br>
+        <p style="color: rgb(112, 134, 202); ;">Copyright &copy; 2024 Tamara. All rights reserved.</p>
+      </div>
+    </footer>
+
+  </body>
+</html>
